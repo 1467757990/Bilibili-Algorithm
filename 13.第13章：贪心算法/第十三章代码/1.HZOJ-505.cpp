@@ -17,12 +17,13 @@
 #include <vector>
 using namespace std;
 
+//设定一个排序规则：要求两个字符串拼接成的新字符串越大越好。
 bool cmp(const string &a, const string &b) {
     return a + b > b + a;
 }
 
 int main() {
-    vector<string> arr;
+    vector<string> arr; //开辟一个字符串数组
     string s;
     int n;
     cin >> n;
